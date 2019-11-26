@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="Formularz.js"></script>
+
+</head>
+<body>
+<ul>
+<li class="menu"><a href="index.html">Strona głowna</a></li>
+<li class="menu"><a href="formularz.html">Szukasz pracy?Zapraszamy</a></li>
+<li class="menu"><a href="Galeria.html">Galeria</a></li>
+<li class="menu"><a href="Cennik.html">Cennik</a></li>
+<li class="menu"><a href="Mapa.html">Mapa</a></li>
+</ul>
+
+<fieldset>
+<h1>Zgłoszenie na kierowcę</h1>
+</fieldset>
+<h2>Kwestionariusz danych osobowych</h2>
+<form action="#" method="get">
+    <fieldset name="dane_osobowe">
+        <p><i>Proszę wypełnić ten formularz. Obowiązkowe pola oznaczono znakiem </i>
+            <em>*</em></p>
+        <label>Imię <em>*</em></label><label>
+        <input type="text" name="f_imie"/>
+    </label> <br/>
+        <label>Nazwisko <em>*</em></label><label>
+        <input type="text" name="f_nazwisko"/>
+    </label> <br/>
+        <label>Płeć <em>*</em></label>
+
+        <label>
+            <input name="f_plec" value="f_k" checked type="radio" onclick="showElement('NazwiskoPanieńskie');"/>
+        </label>kobieta
+        <label>
+            <input name="f_plec" value="f_m" type="radio" onclick="hideElement('NazwiskoPanieńskie');"/>
+        </label>mężczyzna <br/>
+        <label>Nazwisko panieńskie</label>
+        <span id="NazwiskoPanieńskie"><label>
+<input type="text" name="f_nazwisko_p">
+</label></span> <br/>
+
+        <label>E-mail</label><label>
+        <input type="email" name="f_email" />
+    </label><br/>
+        <b id="email" class="none"></b>
+        <label>Kod pocztowy</label> <label>
+        <input type="text" name="f_kod" onkeyup="checkZIPCodeRegEx(this);"/>
+    </label>
+        <b id="kod" class="none"></b>
+        <br/>
+
+        <label>Numer telefonu</label><label>
+        <input type="text" name="f_numertelefonu"/>
+    </label><br/>
+
+
+        <label>Ulica</label><label>
+        <input type="text" name="f_ulica"/>
+    </label> <br/>
+        <label>Miasto</label><label>
+        <input type="text" name="f_miasto"/>
+    </label> <br/>
+        <label>Uwagi</label><label>
+        <textarea rows="5" cols="15" name="uwagi"></textarea>
+    </label> <br/>
+        <input type="submit" name="submit" value="Wyślij formularz" onclick="validate(this.form);"/>
+    </fieldset>
+
+    <script type="text/javascript">
+        function showElement(e) {
+            document.getElementById(e).style.visibility = 'visible';
+        }
+
+        function hideElement(e) {
+            document.getElementById(e).style.visibility = 'hidden';
+        }
+    </script>
+</form>
+
+<h6>
+    © Trzonkowski Patryk
+</h6>
+
+</body>
+</html>

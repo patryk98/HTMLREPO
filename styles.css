@@ -1,0 +1,236 @@
+body {
+    background-color: grey;
+}
+
+
+#blok {
+    position: relative;
+    width: 500px;
+    height: 2.2em;
+    line-height: 2.2em;
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+    color: #10180d;
+}
+
+#blok > p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    animation: przesun 50s linear infinite;
+    -webkit-animation: przesun 25s linear infinite;
+}
+
+#blok1 {
+    position: relative;
+    width: 200px;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #10180d;
+}
+
+#blok1 > p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    animation: przesun 50s linear infinite;
+    -webkit-animation: przesun 25s linear infinite;
+}
+
+#blok2 {
+    position: relative;
+    width: 500px;
+    height: 2.2em;
+    line-height: 2.2em;
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+    color: #10180d;
+}
+
+#blok2 > p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    animation: przesun 50s linear infinite;
+    -webkit-animation: przesun 25s linear infinite;
+}
+
+#blok3 {
+    position: relative;
+    width: 500px;
+    height: 2.2em;
+    line-height: 2.2em;
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+    color: #10180d;
+}
+
+#blok3 > p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    animation: przesun 50s linear infinite;
+    -webkit-animation: przesun 25s linear infinite;
+}
+
+@keyframes przesun {
+    0% {
+        transform: translateX(0);
+        padding-left: 110%;
+    }
+    100% {
+        transform: translateX(-100%);
+        padding-left: 110%;
+    }
+}
+
+@-webkit-keyframes przesun {
+    0% {
+        -webkit-transform: translateX(0);
+        padding-left: 100%;
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        padding-left: 100%;
+    }
+}
+
+
+figure {
+    text-align: center;
+    line-height: 60px;
+    word-spacing: 120px;
+}
+
+
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #5e7180;
+}
+
+
+li.menu {
+    display: inline;
+}
+
+li.menu a {
+    width: 23423px;
+    font-size: 25px;
+    color: #f9ff40;
+    text-decoration: none;
+    margin: 0 1px 15px 150px;
+    letter-spacing: 1.5px;
+    float: end;
+}
+
+li.menu a:hover {
+    text-decoration: none;
+    color: #ff7c10;
+    font-weight: bolder;
+}
+
+table {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 2em;
+    letter-spacing: 1px;
+    line-height: 40px;
+    border-spacing: 30px;
+    position: center;
+    border-collapse: separate;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 100px 650px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 17px 16px 11px rgba(242, 255, 28, 0);
+    text-align: center;
+    font-size: 5em;
+    margin: 30px;
+}
+
+h4 {
+    margin: 80px 750px;
+    color: #10180d;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4em;
+    position: relative;
+    left: -600px;
+    border: 6px dashed #10180d;
+    border-radius: 0 40px 0 40px;
+    background-color: #fffd41;
+
+}
+
+figure1 {
+    margin: 80px 750px;
+    position: relative;
+    top: -750px;
+}
+
+h5 {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+
+
+.svg-image {
+    width: 400px;
+    height: 400px;
+    transform: translateX(20px);
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: anim-1;
+    position: relative;
+    right: 50px;
+    top: -450px;
+
+}
+
+@keyframes anim-1 {
+    20% {
+        fill: #d8a0c9;
+    }
+    60% {
+        transform: translateX(-300px);
+    }
+}
+
+@keyframes anim-2 {
+    20% {
+        fill: #d8a0c9;
+    }
+    60% {
+        transform: translateX(300px);
+    }
+}
+
+h8 {
+    position: relative;
+    right: -500px;
+    top: -450px;
+    font-size: 3em;
+}
+h6{
+    font-size: 0.5em;
+}
